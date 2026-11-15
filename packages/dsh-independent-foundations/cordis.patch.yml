@@ -1,0 +1,58 @@
+- id: ui-chat
+  name: '@deepseek-ai/dsh-client-ui-chat'
+  disabled: true
+
+- id: ui-tool
+  name: '@deepseek-ai/dsh-client-ui-tool'
+  disabled: true
+
+- id: ui-input-trigger
+  name: '@deepseek-ai/dsh-client-ui-input-trigger'
+  disabled: true
+
+- id: ui-user-questions
+  name: '@deepseek-ai/dsh-client-ui-user-questions'
+  disabled: true
+
+- id: ui-conversation
+  name: '@deepseek-ai/dsh-client-ui-conversation'
+  disabled: true
+
+- insert:
+    - id: ui-chat-independent
+      name: './native/ui-chat/lib/index.js'
+      config:
+        transcriptView: standard
+        performanceUsage: detailed
+    - id: ui-tool-independent
+      name: './native/ui-tool/lib/index.js'
+      config: {}
+    - id: ui-input-trigger-independent
+      name: './native/ui-input-trigger/lib/index.js'
+      config: {}
+    - id: ui-user-questions-independent
+      name: './native/ui-user-questions/lib/index.js'
+      config: {}
+    - id: ui-conversation-independent
+      name: './native/ui-conversation/lib/index.js'
+      config:
+        busyEnter: steer
+
+- id: ui-renderer
+  name: '@deepseek-ai/dsh-client-ui-renderer'
+  disabled: true
+
+- id: ui-session
+  name: '@deepseek-ai/dsh-client-ui-session'
+  disabled: true
+
+- insert:
+    - id: ui-renderer-independent
+      name: './native/ui-renderer/lib/index.js'
+      config: {}
+    - id: ui-session-independent
+      name: './native/ui-session/lib/index.js'
+      config: {}
+    - id: session-previews-independent
+      name: './native/session-previews/lib/index.js'
+      config: {}

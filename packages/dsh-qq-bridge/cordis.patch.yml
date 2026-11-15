@@ -1,0 +1,5 @@
+# Derived from Yuuyuko-uu/dsh-qq-link. See LICENSE and README.
+# No old QQ entry is enabled/disabled here; the operator coordinates the non-duplicating switch.
+- insert:
+    - id: qq-bridge-001
+      name: dsh-qq-bridge

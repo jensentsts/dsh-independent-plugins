@@ -1,0 +1,120 @@
+{
+  "sheet": "artwork/whale-girls-source.png",
+  "sheetSha256": "2096584fe9db9c0f72f03d751a8527dee376cef2f06268d0a4a99bde14db138a",
+  "width": 1536,
+  "height": 1024,
+  "avatars": [
+    {
+      "family": "deepseek",
+      "file": "src/client/assets/whale-girl-deepseek.webp",
+      "width": 256,
+      "height": 256,
+      "bytes": 15800,
+      "sha256": "b72d961539d1edbe7ea2711fa6b1ee345f6d41af4a9e5f398ba9b2e481216e1f",
+      "sourceCrop": [
+        0,
+        32,
+        384,
+        416
+      ]
+    },
+    {
+      "family": "gpt",
+      "file": "src/client/assets/whale-girl-gpt.webp",
+      "width": 256,
+      "height": 256,
+      "bytes": 14670,
+      "sha256": "b846257bea66f5038119e950124ef578538741a297e5a989e45b8b9dc02e2162",
+      "sourceCrop": [
+        384,
+        32,
+        768,
+        416
+      ]
+    },
+    {
+      "family": "claude",
+      "file": "src/client/assets/whale-girl-claude.webp",
+      "width": 256,
+      "height": 256,
+      "bytes": 16050,
+      "sha256": "3781810bd966ca0329c63dcea571aaaee21bd3cb0abc1959ea2b17370a13d1d9",
+      "sourceCrop": [
+        768,
+        32,
+        1152,
+        416
+      ]
+    },
+    {
+      "family": "grok",
+      "file": "src/client/assets/whale-girl-grok.webp",
+      "width": 256,
+      "height": 256,
+      "bytes": 13310,
+      "sha256": "4ddc99ec0889fe9d65819af6bf07fc9e7bb3fa2778bb1adaed764ab976b49b56",
+      "sourceCrop": [
+        1152,
+        32,
+        1536,
+        416
+      ]
+    },
+    {
+      "family": "glm",
+      "file": "src/client/assets/whale-girl-glm.webp",
+      "width": 256,
+      "height": 256,
+      "bytes": 14446,
+      "sha256": "d404efdadb637ed7ebb711182d577bf9154f501a660212d5cb33abf35aad473b",
+      "sourceCrop": [
+        0,
+        544,
+        384,
+        928
+      ]
+    },
+    {
+      "family": "kimi",
+      "file": "src/client/assets/whale-girl-kimi.webp",
+      "width": 256,
+      "height": 256,
+      "bytes": 15426,
+      "sha256": "102ad86b074fcd65a9368d87155466f3042cd04e453d35596a273a3215d64b14",
+      "sourceCrop": [
+        384,
+        544,
+        768,
+        928
+      ]
+    },
+    {
+      "family": "gemini",
+      "file": "src/client/assets/whale-girl-gemini.webp",
+      "width": 256,
+      "height": 256,
+      "bytes": 17882,
+      "sha256": "5397fbe53502d8b27ad3e5e5691bf5561e3a040fe43940754387c741fcf11cae",
+      "sourceCrop": [
+        768,
+        544,
+        1152,
+        928
+      ]
+    },
+    {
+      "family": "doubao",
+      "file": "src/client/assets/whale-girl-doubao.webp",
+      "width": 256,
+      "height": 256,
+      "bytes": 15634,
+      "sha256": "c4af9802f05ef6a194d051c0ba9ac56cc80770e9da14f4117229aa3c1519b272",
+      "sourceCrop": [
+        1152,
+        544,
+        1536,
+        928
+      ]
+    }
+  ]
+}

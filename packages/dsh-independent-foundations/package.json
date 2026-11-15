@@ -1,0 +1,48 @@
+{
+  "name": "@local/dsh-independent-foundations",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "description": "Reviewed extension points from the matching DSH release; retains native rendering and filesystem identity.",
+  "license": "MIT",
+  "engines": {
+    "dsh": "0.2.2-rc.1"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./icon": "./icon.svg",
+    "./locale/*.json": "./locale/*.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "roster.js",
+    "cordis.patch.yml",
+    "filesystem.patch.yml",
+    "search-presets.patch.yml",
+    "native",
+    "locale",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "prepare.mjs",
+    "verify.js",
+    "original-hosts"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": [
+        "./cordis.patch.yml",
+        "./filesystem.patch.yml",
+        "./search-presets.patch.yml"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "~4.1.0",
+    "@deepseek-ai/schemastery": "~3.19.0"
+  },
+  "scripts": {
+    "prepare:local": "node prepare.mjs"
+  }
+}

@@ -1,0 +1,28 @@
+import { resolve } from 'node:path';
+import { fileURLToPath, pathToFileURL } from 'node:url';
+import { mkdir, writeFile } from 'node:fs/promises';
+import assert from 'node:assert/strict';
+import { createConfigSchema } from '../src/config.js';
+const root = fileURLToPath(new URL('../', import.meta.url));
+if (!process.env.DSH_BUBBLE_ESBUILD || !process.env.DSH_BUBBLE_EXACT_SOURCE) throw new Error('Set existing esbuild and exact release source paths.');
+const esbuild = await import(pathToFileURL(resolve(process.env.DSH_BUBBLE_ESBUILD)).href);
+const upstream = resolve(process.env.DSH_BUBBLE_EXACT_SOURCE);
+const result = await esbuild.build({ entryPoints: [resolve(upstream, 'vendor/schemastery/src/index.ts')], bundle: true, platform: 'node', format: 'esm', write: false,
+  alias: { '@deepseek-ai/cosmokit': resolve(upstream, 'vendor/cosmokit/src/index.ts') }, target: ['node24'] });
+await mkdir(resolve(root, '.test-output'), { recursive: true });
+const path = resolve(root, '.test-output/exact-schemastery.mjs');
+await writeFile(path, result.outputFiles[0].text, 'utf8');
+const module = await import(pathToFileURL(path).href);
+const Schema = module.default ?? module.Schema;
+const schema = createConfigSchema(Schema);
+const parsed = schema({});
+assert.equal(parsed.enabled.get(), true);
+assert.deepEqual(parsed.members.get(), []);
+const value = schema({ members: [{ id: 'one', matchType: 'family', matchValue: 'deepseek', name: 'Whale', avatar: '' }] });
+assert.equal(value.members.get()[0].name, 'Whale');
+assert.throws(() => schema({ members: [{ id: 'one', matchType: 'family', matchValue: 'invalid' }] }));
+assert.throws(() => schema({ members: [{ id: 'one', matchType: 'source', matchValue: 'qq', avatar: 'https://bad/image.png' }] }));
+const json = JSON.parse(JSON.stringify(schema));
+const clientSchema = new Schema(json);
+assert.equal(clientSchema({ enabled: false }).enabled.get(), false);
+console.log('Exact-release Schemastery Config, volatile values, rejection and serialized schema round-trip passed.');

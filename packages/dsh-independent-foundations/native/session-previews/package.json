@@ -1,0 +1,21 @@
+{
+  "name": "@local/dsh-session-previews",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "inject": ["@deepseek-ai/dsh-api-session-controller", "@deepseek-ai/dsh-api-gateway"],
+      "external": ["@deepseek-ai/dsh-api-gateway/client"]
+    }
+  },
+  "license": "MIT",
+  "files": ["lib", "package.json"]
+}

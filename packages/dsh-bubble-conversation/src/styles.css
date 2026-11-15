@@ -1,0 +1,52 @@
+.dbc-header{display:flex;align-items:center;flex-wrap:wrap;gap:2px 7px;min-width:0;max-width:100%;color:var(--dsw-alias-label-secondary);font:inherit;font-size:var(--dsh-content-font-size-secondary,13px);line-height:20px}
+.dbc-name{font-weight:600;min-width:0;overflow-wrap:anywhere}
+.dbc-tag{box-sizing:border-box;max-width:100%;border-radius:5px;padding:0 6px;color:var(--dsw-alias-label-secondary);background:var(--dsw-alias-interactive-bg-hover);font-size:11px;line-height:17px;overflow-wrap:anywhere}
+.dbc-model{font-size:11px;color:var(--dsw-alias-label-tertiary);overflow-wrap:anywhere}
+.dbc-avatar{display:block;flex:none;width:28px;height:28px;border-radius:9px;object-fit:cover;border:1px solid var(--dsw-alias-border-l2)}
+.dbc-message{min-width:0;max-width:100%;--dsh-message-background:var(--dsw-alias-bg-layer-1);--dsh-message-border-color:var(--dsw-alias-border-l2);--dsh-message-radius:12px}
+.dbc-message > [data-message-chrome]{margin-block-end:5px}
+.dbc-message[data-message-align="end"] [data-message-bubble]{border-end-end-radius:5px}
+
+/* A collapsed native reasoning row normally reserves only its disclosure control. */
+.dbc-message--thinking[data-message-variant="bubble"]:not([data-expanded]){
+  contain:layout;
+  height:auto;
+}
+
+.dbc-message--reply[data-message-variant="bubble"]{
+  --dbc-reply-inset:clamp(8px,1.4vw,14px);
+  box-sizing:border-box;
+  inline-size:fit-content;
+  max-inline-size:100%;
+  padding:9px var(--dbc-reply-inset) 10px;
+  border-radius:var(--dsh-message-radius);
+  border-end-start-radius:5px;
+  background:var(--dsh-message-background);
+  box-shadow:inset 0 0 0 1px var(--dsw-alias-border-l1);
+}
+.dbc-message--reply > [data-message-chrome]{
+  margin-inline:calc(-1 * var(--dbc-reply-inset));
+  padding-inline:var(--dbc-reply-inset);
+}
+.dbc-message--reply:not([data-chat-group-part]){row-gap:10px}
+.dbc-message--reply:not([data-chat-group-part]) > [data-message-chrome]{margin-block-end:0}
+/* Keep the native width and breakout math for wide markdown tables. */
+.dbc-message--reply[data-message-variant="bubble"]:has(.md-table-wide){
+  --dbc-reply-inset:0px;
+  inline-size:100%;
+  background:transparent;
+  box-shadow:none;
+}
+.dbc-settings{color:var(--dsw-alias-label-primary);display:flex;flex-direction:column;gap:20px;min-width:0;max-width:100%;padding:0 0 24px;font:inherit}
+.dbc-settings h2,.dbc-settings h3,.dbc-settings p{margin:0}.dbc-settings h2{font-size:20px}.dbc-settings h3{font-size:15px}
+.dbc-note,.dbc-status{color:var(--dsw-alias-label-secondary);font-size:13px;line-height:1.6}.dbc-status{padding:12px;border:1px solid var(--dsw-alias-border-l2);border-radius:10px;background:var(--dsw-alias-bg-layer-1)}
+.dbc-status[data-error=true],.dbc-error{color:var(--dsw-alias-label-error,var(--dsw-alias-label-primary))}
+.dbc-toggles{display:flex;flex-wrap:wrap;gap:12px 24px}.dbc-toggle{display:flex;align-items:center;gap:8px;font-size:14px}
+.dbc-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px}.dbc-member{border-top:1px solid var(--dsw-alias-border-l2);padding:16px 0;display:grid;grid-template-columns:44px minmax(0,1fr);gap:12px}
+.dbc-fields{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}.dbc-field{display:flex;flex-direction:column;gap:5px;min-width:0;font-size:12px;color:var(--dsw-alias-label-secondary)}
+.dbc-input,.dbc-select{font:inherit;font-size:14px;box-sizing:border-box;width:100%;min-width:0;border:1px solid var(--dsw-alias-border-l2);border-radius:7px;padding:7px 9px;color:var(--dsw-alias-label-primary);background:var(--dsw-alias-bg-base)}
+.dbc-button,.dbc-file-label{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:6px 10px;border:1px solid var(--dsw-alias-border-l2);border-radius:7px;font:inherit;font-size:13px;color:var(--dsw-alias-label-primary);background:var(--dsw-alias-bg-layer-1);cursor:pointer}
+.dbc-button:disabled{cursor:default;opacity:.55}.dbc-actions{display:flex;flex-wrap:wrap;align-items:center;gap:8px;grid-column:1/-1}.dbc-avatar-preview{width:40px;height:40px;object-fit:cover;border-radius:12px}.dbc-file-input{max-width:210px;font-size:12px}
+.dbc-button:focus-visible,.dbc-input:focus-visible,.dbc-select:focus-visible,.dbc-file-input:focus-visible{outline:2px solid var(--dsw-alias-border-focus,var(--dsw-alias-label-secondary));outline-offset:2px}
+@media(max-width:600px){.dbc-fields{grid-template-columns:minmax(0,1fr)}.dbc-toolbar{align-items:flex-start;flex-direction:column}.dbc-member{grid-template-columns:36px minmax(0,1fr)}}
+@media(forced-colors:active){.dbc-tag,.dbc-status,.dbc-input,.dbc-button,.dbc-select{border:1px solid CanvasText}}

@@ -1,0 +1,7 @@
+- id: sessions
+  name: '@deepseek-ai/dsh-session'
+- id: projections
+  name: '@deepseek-ai/dsh-session-projection'
+- id: bubble-conversation
+  name: ../../index.js
+  config: {}

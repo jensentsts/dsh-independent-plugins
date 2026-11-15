@@ -1,0 +1,12 @@
+{
+  "meta": {
+    "title": "Conversation audio",
+    "description": "Play stored audio attachments inside native conversations while keeping the original file card and message text."
+  },
+  "ui": {
+    "player": "Play audio attachment: {name}",
+    "loading": "Preparing audio controls…",
+    "unavailable": "Audio controls are unavailable. The original file is still available above.",
+    "playbackFailed": "This audio could not be played. Your browser may not support its codec, or the stored file may be unavailable. The original file is still available above."
+  }
+}

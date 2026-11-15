@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.cordis/
+.test-output/
+.test-cache/
+coverage/
+*.log
+.env
+.env.*
+!.env.example

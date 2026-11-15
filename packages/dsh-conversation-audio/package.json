@@ -1,0 +1,32 @@
+{
+  "name": "dsh-conversation-audio",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "description": "Native conversation audio playback from durable file attachments, preserving original files and text.",
+  "exports": {
+    ".": { "types": "./types.d.ts", "default": "./index.mjs" },
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": ["index.mjs", "audio.mjs", "official-voice.mjs", "deepseek-tool.mjs", "client-entry.mjs", "client.js", "build.mjs", "types.d.ts", "locale/*.json", "icon.svg", "cordis.patch.yml", "README.md", "LICENSE"],
+  "scripts": { "build": "node build.mjs" },
+  "engines": { "node": ">=24.9", "dsh": ">=0.2.2-rc.1 <0.3.0" },
+  "peerDependencies": { "@deepseek-ai/cordis": "~4.1.0" },
+  "devDependencies": {
+    "@deepseek-ai/cordis": "~4.1.0",
+    "@deepseek-ai/dsh-attachment": "0.2.2-rc.1",
+    "@deepseek-ai/dsh-client-ui-slots": "0.2.2-rc.1",
+    "react": "18.3.1"
+  },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "inject": ["@deepseek-ai/dsh-client-locale", "@deepseek-ai/dsh-client-resources", "@deepseek-ai/dsh-client-ui-chat", "@deepseek-ai/dsh-client-ui-tool"]
+    }
+  }
+}

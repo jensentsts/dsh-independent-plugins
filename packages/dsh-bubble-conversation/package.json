@@ -1,0 +1,32 @@
+{
+  "name": "dsh-bubble-conversation",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Role-aware message chrome over native DSH conversations, with historical model attribution and independent member settings.",
+  "license": "MIT",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": { "types": "./index.d.ts", "default": "./index.js" },
+    "./client": "./lib/client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": ["index.js", "index.d.ts", "src", "lib/client.js", "locale", "icon.svg", "cordis.patch.yml", "README.md", "CONTRACT.md", "LICENSE", "ARTWORK.md", "artwork"],
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "check": "node scripts/check.mjs",
+    "build": "node scripts/build.mjs"
+  },
+  "engines": { "node": ">=22", "dsh": ">=0.2.2-rc.1 <0.3.0-0" },
+  "peerDependencies": { "@deepseek-ai/cordis": "~4.1.0", "@deepseek-ai/schemastery": "~3.19.0", "zod": "^4.0.0" },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "inject": ["@deepseek-ai/dsh-client-ui-chat", "@deepseek-ai/dsh-client-ui-session", "@deepseek-ai/dsh-client-locale", "@deepseek-ai/dsh-client-ui-settings", "@deepseek-ai/dsh-client-ui-user-questions"]
+    }
+  }
+}

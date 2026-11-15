@@ -1,0 +1,9 @@
+# Alias-aware local filesystem, preserving the installed filesystem service identities.
+- id: fs-sandbox
+  name: '@deepseek-ai/dsh-fs-sandbox'
+  disabled: true
+
+- insert:
+    - id: fs-sandbox-independent
+      name: './native/fs-sandbox/lib/index.js'
+      config: {}

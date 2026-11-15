@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Conversation en bulles",
+    "description": "Noms des membres, étiquettes de rôle et avatars sur les messages natifs de DSH ; affiche le modèle et le niveau de raisonnement enregistrés sans remplacer le contenu natif.",
+    "detail": "README.md"
+  }
+}
