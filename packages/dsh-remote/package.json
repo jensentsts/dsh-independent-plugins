@@ -20,13 +20,14 @@
     "aes-256-gcm",
     "frp"
   ],
-  "homepage": "https://github.com/jensentsts/dsh-remote#readme",
+  "homepage": "https://github.com/jensentsts/dsh-independent-plugins/tree/main/packages/dsh-remote#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jensentsts/dsh-remote.git"
+    "url": "git+https://github.com/jensentsts/dsh-independent-plugins.git",
+    "directory": "packages/dsh-remote"
   },
   "bugs": {
-    "url": "https://github.com/jensentsts/dsh-remote/issues"
+    "url": "https://github.com/jensentsts/dsh-independent-plugins/issues"
   },
   "type": "module",
   "main": "lib/client.js",
@@ -118,5 +119,9 @@
       "optional": true
     }
   },
-  "license": "MIT"
+  "license": "MIT",
+  "originalRepository": {
+    "type": "git",
+    "url": "git+https://github.com/jensentsts/dsh-remote.git"
+  }
 }

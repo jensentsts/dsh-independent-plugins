@@ -44,5 +44,14 @@
   },
   "scripts": {
     "prepare:local": "node prepare.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jensentsts/dsh-independent-plugins.git",
+    "directory": "packages/dsh-independent-foundations"
+  },
+  "homepage": "https://github.com/jensentsts/dsh-independent-plugins/tree/main/packages/dsh-independent-foundations#readme",
+  "bugs": {
+    "url": "https://github.com/jensentsts/dsh-independent-plugins/issues"
   }
 }

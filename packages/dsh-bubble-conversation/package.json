@@ -8,25 +8,65 @@
   "main": "./index.js",
   "types": "./index.d.ts",
   "exports": {
-    ".": { "types": "./index.d.ts", "default": "./index.js" },
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    },
     "./client": "./lib/client.js",
     "./locale/*.json": "./locale/*.json",
     "./icon": "./icon.svg",
     "./package.json": "./package.json"
   },
-  "files": ["index.js", "index.d.ts", "src", "lib/client.js", "locale", "icon.svg", "cordis.patch.yml", "README.md", "CONTRACT.md", "LICENSE", "ARTWORK.md", "artwork"],
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "src",
+    "lib/client.js",
+    "locale",
+    "icon.svg",
+    "cordis.patch.yml",
+    "README.md",
+    "CONTRACT.md",
+    "LICENSE",
+    "ARTWORK.md",
+    "artwork"
+  ],
   "scripts": {
     "test": "node --test test/*.test.mjs",
     "check": "node scripts/check.mjs",
     "build": "node scripts/build.mjs"
   },
-  "engines": { "node": ">=22", "dsh": ">=0.2.2-rc.1 <0.3.0-0" },
-  "peerDependencies": { "@deepseek-ai/cordis": "~4.1.0", "@deepseek-ai/schemastery": "~3.19.0", "zod": "^4.0.0" },
+  "engines": {
+    "node": ">=22",
+    "dsh": ">=0.2.2-rc.1 <0.3.0-0"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "~4.1.0",
+    "@deepseek-ai/schemastery": "~3.19.0",
+    "zod": "^4.0.0"
+  },
   "dsh": {
-    "bundle": { "patch": "./cordis.patch.yml" },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
     "client": {
       "platform": "web",
-      "inject": ["@deepseek-ai/dsh-client-ui-chat", "@deepseek-ai/dsh-client-ui-session", "@deepseek-ai/dsh-client-locale", "@deepseek-ai/dsh-client-ui-settings", "@deepseek-ai/dsh-client-ui-user-questions"]
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-chat",
+        "@deepseek-ai/dsh-client-ui-session",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-ui-user-questions"
+      ]
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jensentsts/dsh-independent-plugins.git",
+    "directory": "packages/dsh-bubble-conversation"
+  },
+  "homepage": "https://github.com/jensentsts/dsh-independent-plugins/tree/main/packages/dsh-bubble-conversation#readme",
+  "bugs": {
+    "url": "https://github.com/jensentsts/dsh-independent-plugins/issues"
   }
 }

@@ -11,7 +11,7 @@ async function copyTree(source, target) {
 }
 await mkdir(out, { recursive: true })
 for (const directory of ['lib', 'locale', 'legacy', 'tools']) await copyTree(join(root, directory), join(out, directory))
-for (const file of ['icon.svg', 'cordis.patch.yml', 'README.md', 'LICENSE', 'PROVENANCE.json', 'SECOND-INCREMENT.md']) await copyFile(join(root, file), join(out, file))
+for (const file of ['icon.svg', 'cordis.patch.yml', 'README.md', 'README-HISTORY.md', 'LICENSE', 'PROVENANCE.json', 'SECOND-INCREMENT.md']) await copyFile(join(root, file), join(out, file))
 const manifest = JSON.parse(await readFile(join(root, 'package.json'), 'utf8'))
 delete manifest.scripts
 await writeFile(join(out, 'package.json'), JSON.stringify(manifest, null, 2) + '\n', 'utf8')

@@ -27,5 +27,14 @@
     "bundle": {
       "patch": "./cordis.patch.yml"
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jensentsts/dsh-independent-plugins.git",
+    "directory": "packages/dsh-steer-merge"
+  },
+  "homepage": "https://github.com/jensentsts/dsh-independent-plugins/tree/main/packages/dsh-steer-merge#readme",
+  "bugs": {
+    "url": "https://github.com/jensentsts/dsh-independent-plugins/issues"
   }
 }

@@ -5,9 +5,14 @@
   "description": "Isolated QQ transport fork of Yuuyuko-uu/dsh-qq-link, with native reply and bounded super-agent IO integration.",
   "license": "SEE LICENSE IN LICENSE",
   "author": "Yuuyuko-uu (https://github.com/Yuuyuko-uu)",
-  "contributors": ["Local independent-plugin adaptation (2026)"],
+  "contributors": [
+    "Local independent-plugin adaptation (2026)"
+  ],
   "type": "module",
-  "engines": { "node": ">=22", "dsh": ">=0.2.2-rc.1" },
+  "engines": {
+    "node": ">=22",
+    "dsh": ">=0.2.2-rc.1"
+  },
   "main": "./lib/host.js",
   "exports": {
     ".": "./lib/host.js",
@@ -17,12 +22,55 @@
     "./icon": "./icon.svg",
     "./package.json": "./package.json"
   },
-  "files": ["lib", "legacy", "tools", "locale", "icon.svg", "cordis.patch.yml", "README.md", "LICENSE", "PROVENANCE.json"],
-  "scripts": { "build": "node build.mjs", "test": "node tests/run.mjs" },
-  "peerDependencies": { "@deepseek-ai/schemastery": "~3.19.0", "zod": "^4.1.0", "@deepseek-ai/dsh-storage-domain": "0.2.2-rc.1" },
-  "dsh": {
-    "bundle": { "patch": "./cordis.patch.yml" },
-    "client": { "platform": "web", "inject": ["@deepseek-ai/dsh-client-ui-slots", "@deepseek-ai/dsh-client-locale"] }
+  "files": [
+    "lib",
+    "legacy",
+    "tools",
+    "locale",
+    "icon.svg",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "PROVENANCE.json",
+    "README-HISTORY.md",
+    "SECOND-INCREMENT.md",
+    "build.mjs"
+  ],
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node tests/run.mjs"
   },
-  "upstream": { "name": "dsh-qq-link", "version": "1.5.4", "repository": "https://github.com/Yuuyuko-uu/dsh-qq-link", "author": "Yuuyuko-uu", "license": "Yuuyuko-uu 插件许可 1.2" }
+  "peerDependencies": {
+    "@deepseek-ai/schemastery": "~3.19.0",
+    "zod": "^4.1.0",
+    "@deepseek-ai/dsh-storage-domain": "0.2.2-rc.1"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-slots",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  },
+  "upstream": {
+    "name": "dsh-qq-link",
+    "version": "1.5.4",
+    "repository": "https://github.com/Yuuyuko-uu/dsh-qq-link",
+    "author": "Yuuyuko-uu",
+    "license": "Yuuyuko-uu 插件许可 1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jensentsts/dsh-independent-plugins.git",
+    "directory": "packages/dsh-qq-bridge"
+  },
+  "homepage": "https://github.com/jensentsts/dsh-independent-plugins/tree/main/packages/dsh-qq-bridge#readme",
+  "bugs": {
+    "url": "https://github.com/jensentsts/dsh-independent-plugins/issues"
+  }
 }
