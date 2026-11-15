@@ -1,0 +1,401 @@
+{
+  "format": 1,
+  "title": {
+    "en": "DSH Independent Plugins",
+    "zh": "DSH 独立插件集"
+  },
+  "description": {
+    "en": "Independent DSH plugins for messaging and collaboration.",
+    "zh": "消息互联与会话协作的独立插件。"
+  },
+  "metadata": {
+    "categories": {
+      "integration": {
+        "title": {
+          "en": "Connections",
+          "zh": "连接"
+        }
+      },
+      "message": {
+        "title": {
+          "en": "Messaging",
+          "zh": "消息"
+        }
+      },
+      "interface": {
+        "title": {
+          "en": "Conversation",
+          "zh": "会话界面"
+        }
+      },
+      "workspace": {
+        "title": {
+          "en": "Workspaces",
+          "zh": "工作区"
+        }
+      },
+      "foundation": {
+        "title": {
+          "en": "Foundation",
+          "zh": "基础"
+        }
+      }
+    }
+  },
+  "plugins": [
+    {
+      "name": "dsh-qq-bridge",
+      "title": {
+        "en": "QQ bridge",
+        "zh": "QQ 桥接"
+      },
+      "description": {
+        "en": "Connect QQ chats through OneBot with media, outbox and group tools.",
+        "zh": "连接 QQ 私聊与群聊，支持消息、媒体、待发箱和群聊工具。"
+      },
+      "icon": "icons/dsh-qq-bridge.svg",
+      "author": "Yuuyuko-uu / independent contributors",
+      "homepage": "https://github.com/jensentsts/dsh-qq-bridge#readme",
+      "repository": {
+        "url": "https://github.com/jensentsts/dsh-qq-bridge"
+      },
+      "metadata": {
+        "category": "integration",
+        "keywords": [
+          "QQ",
+          "OneBot",
+          "群聊",
+          "消息"
+        ]
+      },
+      "versions": [
+        {
+          "version": "0.0.1",
+          "publishTimestamp": 1794733753,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/jensentsts/dsh-qq-bridge",
+            "commit": "7ff8146d92415d41b5fee5c2ba5bfc8307af6b30"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-rc.1"
+          }
+        }
+      ]
+    },
+    {
+      "name": "dsh-super-agent-io",
+      "title": {
+        "en": "Message router",
+        "zh": "消息路由"
+      },
+      "description": {
+        "en": "Route messages and delivery receipts between DSH and external channels.",
+        "zh": "在 DSH 会话和外部渠道之间传递消息与回执。"
+      },
+      "icon": "icons/dsh-message-router.svg",
+      "author": "Independent DSH contributors",
+      "homepage": "https://github.com/jensentsts/dsh-message-router#readme",
+      "repository": {
+        "url": "https://github.com/jensentsts/dsh-message-router"
+      },
+      "metadata": {
+        "category": "message",
+        "keywords": [
+          "消息",
+          "渠道",
+          "外部输入",
+          "输出"
+        ]
+      },
+      "versions": [
+        {
+          "version": "0.0.1",
+          "publishTimestamp": 1794733752,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/jensentsts/dsh-message-router",
+            "commit": "5e5a5448431102054b5f3f6fbb1ed1852472d6b0"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-rc.1 <0.3.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "dsh-steer-merge",
+      "title": {
+        "en": "Steering merge",
+        "zh": "插话合并"
+      },
+      "description": {
+        "en": "Combine closely spaced steering messages while preserving order and origin.",
+        "zh": "合并短时间内的多条插话，保留消息顺序与来源。"
+      },
+      "icon": "icons/dsh-steer-merge.svg",
+      "author": "Independent DSH contributors",
+      "homepage": "https://github.com/jensentsts/dsh-steer-merge#readme",
+      "repository": {
+        "url": "https://github.com/jensentsts/dsh-steer-merge"
+      },
+      "metadata": {
+        "category": "message",
+        "keywords": [
+          "插话",
+          "消息合并",
+          "steer"
+        ]
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1794733755,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/jensentsts/dsh-steer-merge",
+            "commit": "4a28028c75ca4eb78c37cb7dc1ed2affa416a596"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-rc.1 <0.3.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "dsh-bubble-conversation",
+      "title": {
+        "en": "Bubble conversation",
+        "zh": "气泡会话"
+      },
+      "description": {
+        "en": "Add role-aware bubbles, avatars and model attribution to conversations.",
+        "zh": "为会话提供身份、头像和模型信息，让交互过程更清楚。"
+      },
+      "icon": "icons/dsh-bubble-conversation.svg",
+      "author": "Independent DSH contributors",
+      "homepage": "https://github.com/jensentsts/dsh-bubble-conversation#readme",
+      "repository": {
+        "url": "https://github.com/jensentsts/dsh-bubble-conversation"
+      },
+      "metadata": {
+        "category": "interface",
+        "keywords": [
+          "气泡",
+          "头像",
+          "模型"
+        ]
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1794733750,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/jensentsts/dsh-bubble-conversation",
+            "commit": "e842e1d6f5adf3cffc54633126e252fe825b5fec"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-rc.1 <0.3.0-0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "@local/dsh-resource-picker",
+      "title": {
+        "en": "Resource picker",
+        "zh": "会话与资源选择器"
+      },
+      "description": {
+        "en": "Select workspaces, sessions and files with conversation previews.",
+        "zh": "在 DSH 内选择工作区、会话和文件，并提供会话预览。"
+      },
+      "icon": "icons/dsh-resource-picker.svg",
+      "author": "Independent DSH contributors",
+      "homepage": "https://github.com/jensentsts/dsh-resource-picker#readme",
+      "repository": {
+        "url": "https://github.com/jensentsts/dsh-resource-picker"
+      },
+      "metadata": {
+        "category": "workspace",
+        "keywords": [
+          "选择器",
+          "会话",
+          "文件"
+        ]
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1794733755,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/jensentsts/dsh-resource-picker",
+            "commit": "f577cd118fffb1e65d1b41833479512807f218a7"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-rc.1 <0.3.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "dsh-workspace-reference",
+      "title": {
+        "en": "Workspace references",
+        "zh": "工作区引用"
+      },
+      "description": {
+        "en": "Use readable references and stable identities for workspaces, sessions and files.",
+        "zh": "使用可读引用与稳定标识访问工作区、会话和文件。"
+      },
+      "icon": "icons/dsh-workspace-reference.svg",
+      "author": "Independent DSH contributors",
+      "homepage": "https://github.com/jensentsts/dsh-workspace-reference#readme",
+      "repository": {
+        "url": "https://github.com/jensentsts/dsh-workspace-reference"
+      },
+      "metadata": {
+        "category": "workspace",
+        "keywords": [
+          "工作区",
+          "引用",
+          "会话",
+          "文件"
+        ]
+      },
+      "versions": [
+        {
+          "version": "0.2.0",
+          "publishTimestamp": 1794733756,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/jensentsts/dsh-workspace-reference",
+            "commit": "7df7bf17627c8f557cfd79ff29c7addc27d4675f"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-rc.1 <0.3.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "dsh-remote",
+      "title": {
+        "en": "Remote connections",
+        "zh": "远程连接"
+      },
+      "description": {
+        "en": "Connect remote hosts, workspaces, sessions and tools.",
+        "zh": "连接远程主机，使用其工作区、会话和工具。"
+      },
+      "icon": "icons/dsh-remote-plugin.svg",
+      "author": "jensentsts",
+      "homepage": "https://github.com/jensentsts/dsh-remote-plugin#readme",
+      "repository": {
+        "url": "https://github.com/jensentsts/dsh-remote-plugin"
+      },
+      "metadata": {
+        "category": "integration",
+        "keywords": [
+          "远程",
+          "多主机",
+          "工具"
+        ]
+      },
+      "versions": [
+        {
+          "version": "0.5.2",
+          "publishTimestamp": 1794733754,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/jensentsts/dsh-remote-plugin",
+            "commit": "efb42c5c338e779396539378afa97d22bb2b3725"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-rc.1 <0.3.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "dsh-conversation-audio",
+      "title": {
+        "en": "Conversation audio",
+        "zh": "会话音频"
+      },
+      "description": {
+        "en": "Play audio attachments in conversations and extend voice workflows.",
+        "zh": "在会话中播放音频附件，提供语音相关扩展。"
+      },
+      "icon": "icons/dsh-conversation-audio.svg",
+      "author": "Independent DSH contributors",
+      "homepage": "https://github.com/jensentsts/dsh-conversation-audio#readme",
+      "repository": {
+        "url": "https://github.com/jensentsts/dsh-conversation-audio"
+      },
+      "metadata": {
+        "category": "interface",
+        "keywords": [
+          "语音",
+          "音频",
+          "播放"
+        ]
+      },
+      "versions": [
+        {
+          "version": "0.0.1",
+          "publishTimestamp": 1794733751,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/jensentsts/dsh-conversation-audio",
+            "commit": "ad23681754bce695c7d8f663a46bea8cd471929c"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-rc.1 <0.3.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "@local/dsh-independent-foundations",
+      "title": {
+        "en": "Independent foundations",
+        "zh": "基础扩展"
+      },
+      "description": {
+        "en": "Provide version-pinned conversation and workspace extension points.",
+        "zh": "为指定 DSH 版本提供会话展示与工作区路径的基础扩展。"
+      },
+      "icon": "icons/dsh-independent-foundations.svg",
+      "author": "DeepSeek / independent contributors",
+      "homepage": "https://github.com/jensentsts/dsh-independent-foundations#readme",
+      "repository": {
+        "url": "https://github.com/jensentsts/dsh-independent-foundations"
+      },
+      "metadata": {
+        "category": "foundation",
+        "keywords": [
+          "基础",
+          "工作区",
+          "底座"
+        ]
+      },
+      "versions": [
+        {
+          "version": "0.0.1",
+          "publishTimestamp": 1794733752,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/jensentsts/dsh-independent-foundations",
+            "commit": "1aa8d8c876133b8444d0e3bf68194a197cedcc96"
+          },
+          "engines": {
+            "dsh": "0.2.2-rc.1"
+          }
+        }
+      ]
+    }
+  ]
+}

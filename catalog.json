@@ -1,0 +1,221 @@
+[
+  {
+    "repo": "dsh-qq-bridge",
+    "name": "dsh-qq-bridge",
+    "title": {
+      "en": "QQ bridge",
+      "zh": "QQ 桥接"
+    },
+    "description": {
+      "en": "Connect QQ chats through OneBot with media, outbox and group tools.",
+      "zh": "连接 QQ 私聊与群聊，支持消息、媒体、待发箱和群聊工具。"
+    },
+    "category": "integration",
+    "keywords": [
+      "QQ",
+      "OneBot",
+      "群聊",
+      "消息"
+    ],
+    "author": "Yuuyuko-uu / independent contributors",
+    "version": "0.0.1",
+    "dsh": ">=0.2.2-rc.1",
+    "commit": "7ff8146d92415d41b5fee5c2ba5bfc8307af6b30",
+    "publishTimestamp": 1794733753,
+    "license": "SEE LICENSE IN LICENSE"
+  },
+  {
+    "repo": "dsh-message-router",
+    "name": "dsh-super-agent-io",
+    "title": {
+      "en": "Message router",
+      "zh": "消息路由"
+    },
+    "description": {
+      "en": "Route messages and delivery receipts between DSH and external channels.",
+      "zh": "在 DSH 会话和外部渠道之间传递消息与回执。"
+    },
+    "category": "message",
+    "keywords": [
+      "消息",
+      "渠道",
+      "外部输入",
+      "输出"
+    ],
+    "author": "Independent DSH contributors",
+    "version": "0.0.1",
+    "dsh": ">=0.2.2-rc.1 <0.3.0",
+    "commit": "5e5a5448431102054b5f3f6fbb1ed1852472d6b0",
+    "publishTimestamp": 1794733752,
+    "license": "MIT"
+  },
+  {
+    "repo": "dsh-steer-merge",
+    "name": "dsh-steer-merge",
+    "title": {
+      "en": "Steering merge",
+      "zh": "插话合并"
+    },
+    "description": {
+      "en": "Combine closely spaced steering messages while preserving order and origin.",
+      "zh": "合并短时间内的多条插话，保留消息顺序与来源。"
+    },
+    "category": "message",
+    "keywords": [
+      "插话",
+      "消息合并",
+      "steer"
+    ],
+    "author": "Independent DSH contributors",
+    "version": "0.1.0",
+    "dsh": ">=0.2.2-rc.1 <0.3.0",
+    "commit": "4a28028c75ca4eb78c37cb7dc1ed2affa416a596",
+    "publishTimestamp": 1794733755,
+    "license": "MIT"
+  },
+  {
+    "repo": "dsh-bubble-conversation",
+    "name": "dsh-bubble-conversation",
+    "title": {
+      "en": "Bubble conversation",
+      "zh": "气泡会话"
+    },
+    "description": {
+      "en": "Add role-aware bubbles, avatars and model attribution to conversations.",
+      "zh": "为会话提供身份、头像和模型信息，让交互过程更清楚。"
+    },
+    "category": "interface",
+    "keywords": [
+      "气泡",
+      "头像",
+      "模型"
+    ],
+    "author": "Independent DSH contributors",
+    "version": "0.1.0",
+    "dsh": ">=0.2.2-rc.1 <0.3.0-0",
+    "commit": "e842e1d6f5adf3cffc54633126e252fe825b5fec",
+    "publishTimestamp": 1794733750,
+    "license": "MIT"
+  },
+  {
+    "repo": "dsh-resource-picker",
+    "name": "@local/dsh-resource-picker",
+    "title": {
+      "en": "Resource picker",
+      "zh": "会话与资源选择器"
+    },
+    "description": {
+      "en": "Select workspaces, sessions and files with conversation previews.",
+      "zh": "在 DSH 内选择工作区、会话和文件，并提供会话预览。"
+    },
+    "category": "workspace",
+    "keywords": [
+      "选择器",
+      "会话",
+      "文件"
+    ],
+    "author": "Independent DSH contributors",
+    "version": "0.1.0",
+    "dsh": ">=0.2.2-rc.1 <0.3.0",
+    "commit": "f577cd118fffb1e65d1b41833479512807f218a7",
+    "publishTimestamp": 1794733755,
+    "license": "MIT"
+  },
+  {
+    "repo": "dsh-workspace-reference",
+    "name": "dsh-workspace-reference",
+    "title": {
+      "en": "Workspace references",
+      "zh": "工作区引用"
+    },
+    "description": {
+      "en": "Use readable references and stable identities for workspaces, sessions and files.",
+      "zh": "使用可读引用与稳定标识访问工作区、会话和文件。"
+    },
+    "category": "workspace",
+    "keywords": [
+      "工作区",
+      "引用",
+      "会话",
+      "文件"
+    ],
+    "author": "Independent DSH contributors",
+    "version": "0.2.0",
+    "dsh": ">=0.2.2-rc.1 <0.3.0",
+    "commit": "7df7bf17627c8f557cfd79ff29c7addc27d4675f",
+    "publishTimestamp": 1794733756,
+    "license": "MIT"
+  },
+  {
+    "repo": "dsh-remote-plugin",
+    "name": "dsh-remote",
+    "title": {
+      "en": "Remote connections",
+      "zh": "远程连接"
+    },
+    "description": {
+      "en": "Connect remote hosts, workspaces, sessions and tools.",
+      "zh": "连接远程主机，使用其工作区、会话和工具。"
+    },
+    "category": "integration",
+    "keywords": [
+      "远程",
+      "多主机",
+      "工具"
+    ],
+    "author": "jensentsts",
+    "version": "0.5.2",
+    "dsh": ">=0.2.2-rc.1 <0.3.0",
+    "commit": "efb42c5c338e779396539378afa97d22bb2b3725",
+    "publishTimestamp": 1794733754,
+    "license": "MIT"
+  },
+  {
+    "repo": "dsh-conversation-audio",
+    "name": "dsh-conversation-audio",
+    "title": {
+      "en": "Conversation audio",
+      "zh": "会话音频"
+    },
+    "description": {
+      "en": "Play audio attachments in conversations and extend voice workflows.",
+      "zh": "在会话中播放音频附件，提供语音相关扩展。"
+    },
+    "category": "interface",
+    "keywords": [
+      "语音",
+      "音频",
+      "播放"
+    ],
+    "author": "Independent DSH contributors",
+    "version": "0.0.1",
+    "dsh": ">=0.2.2-rc.1 <0.3.0",
+    "commit": "ad23681754bce695c7d8f663a46bea8cd471929c",
+    "publishTimestamp": 1794733751,
+    "license": "MIT"
+  },
+  {
+    "repo": "dsh-independent-foundations",
+    "name": "@local/dsh-independent-foundations",
+    "title": {
+      "en": "Independent foundations",
+      "zh": "基础扩展"
+    },
+    "description": {
+      "en": "Provide version-pinned conversation and workspace extension points.",
+      "zh": "为指定 DSH 版本提供会话展示与工作区路径的基础扩展。"
+    },
+    "category": "foundation",
+    "keywords": [
+      "基础",
+      "工作区",
+      "底座"
+    ],
+    "author": "DeepSeek / independent contributors",
+    "version": "0.0.1",
+    "dsh": "0.2.2-rc.1",
+    "commit": "1aa8d8c876133b8444d0e3bf68194a197cedcc96",
+    "publishTimestamp": 1794733752,
+    "license": "MIT"
+  }
+]
