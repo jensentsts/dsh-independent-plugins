@@ -20,6 +20,12 @@
 
 消息路由插件的历史包名为 `dsh-super-agent-io`；仓库使用更直观的 `dsh-message-router` 名称。
 
+## 直接从 GitHub 安装
+
+打开[插件导航页](https://jensentsts.github.io/dsh-independent-plugins/)，在所需插件卡片上点击「复制安装地址」，然后在 DSH 的「插件 → 安装第三方插件」中粘贴并安装。每个独立仓库的 README 也提供对应地址。该方式使用 GitHub 提供的安装包，适合只安装了 DSH 的电脑。
+
+QQ 桥接需要先安装消息路由；工作区引用的完整路径功能需要与 DSH 版本匹配的基础扩展。基础扩展的兼容版本请以该仓库的说明为准。
+
 ## 在 DSH 市场中查找
 
 1. 在 DSH「插件 → 实验性插件」中启用自定义插件市场。

@@ -70,6 +70,18 @@
       },
       "versions": [
         {
+          "version": "0.0.2",
+          "publishTimestamp": 1795262315,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/jensentsts/dsh-qq-bridge",
+            "commit": "5f76fb1871949af29bca2ca3db635a6bb59fa3c8"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-rc.1"
+          }
+        },
+        {
           "version": "0.0.1",
           "publishTimestamp": 1794733753,
           "source": {
@@ -109,6 +121,18 @@
         ]
       },
       "versions": [
+        {
+          "version": "0.0.2",
+          "publishTimestamp": 1795262315,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/jensentsts/dsh-message-router",
+            "commit": "0a90a60037903eed72a7a14d14efd72a81ff0f91"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-rc.1 <0.3.0"
+          }
+        },
         {
           "version": "0.0.1",
           "publishTimestamp": 1794733752,
@@ -154,7 +178,7 @@
           "source": {
             "type": "git",
             "url": "https://github.com/jensentsts/dsh-steer-merge",
-            "commit": "4a28028c75ca4eb78c37cb7dc1ed2affa416a596"
+            "commit": "61a43bbf46446fa32f870bae344b333ec31e9d47"
           },
           "engines": {
             "dsh": ">=0.2.2-rc.1 <0.3.0"
@@ -193,7 +217,7 @@
           "source": {
             "type": "git",
             "url": "https://github.com/jensentsts/dsh-bubble-conversation",
-            "commit": "e842e1d6f5adf3cffc54633126e252fe825b5fec"
+            "commit": "86f8b6e54366211c6c8e7fa2140f38eae4382fc9"
           },
           "engines": {
             "dsh": ">=0.2.2-rc.1 <0.3.0-0"
@@ -232,7 +256,7 @@
           "source": {
             "type": "git",
             "url": "https://github.com/jensentsts/dsh-resource-picker",
-            "commit": "f577cd118fffb1e65d1b41833479512807f218a7"
+            "commit": "46be826607902f44ea0df86f7b82be4de5b3685b"
           },
           "engines": {
             "dsh": ">=0.2.2-rc.1 <0.3.0"
@@ -272,7 +296,7 @@
           "source": {
             "type": "git",
             "url": "https://github.com/jensentsts/dsh-workspace-reference",
-            "commit": "7df7bf17627c8f557cfd79ff29c7addc27d4675f"
+            "commit": "5300d9abaa2baf47ac85120c0f7d96da37509c0d"
           },
           "engines": {
             "dsh": ">=0.2.2-rc.1 <0.3.0"
@@ -305,6 +329,18 @@
         ]
       },
       "versions": [
+        {
+          "version": "0.5.3",
+          "publishTimestamp": 1795262316,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/jensentsts/dsh-remote-plugin",
+            "commit": "bcf27970ca3500a667df8ffaca55f04462fb6e63"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-rc.1 <0.3.0"
+          }
+        },
         {
           "version": "0.5.2",
           "publishTimestamp": 1794733754,
@@ -350,7 +386,7 @@
           "source": {
             "type": "git",
             "url": "https://github.com/jensentsts/dsh-conversation-audio",
-            "commit": "ad23681754bce695c7d8f663a46bea8cd471929c"
+            "commit": "e6825692f0433335de0a4632c9cad57f4206428c"
           },
           "engines": {
             "dsh": ">=0.2.2-rc.1 <0.3.0"
@@ -383,6 +419,18 @@
         ]
       },
       "versions": [
+        {
+          "version": "0.0.2",
+          "publishTimestamp": 1795262316,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/jensentsts/dsh-independent-foundations",
+            "commit": "f6035dbc483941e25ef8a6d4b4591395d712204e"
+          },
+          "engines": {
+            "dsh": "0.2.2-rc.1"
+          }
+        },
         {
           "version": "0.0.1",
           "publishTimestamp": 1794733752,

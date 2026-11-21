@@ -18,11 +18,19 @@
       "消息"
     ],
     "author": "Yuuyuko-uu / independent contributors",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "dsh": ">=0.2.2-rc.1",
-    "commit": "7ff8146d92415d41b5fee5c2ba5bfc8307af6b30",
-    "publishTimestamp": 1794733753,
-    "license": "SEE LICENSE IN LICENSE"
+    "commit": "5f76fb1871949af29bca2ca3db635a6bb59fa3c8",
+    "publishTimestamp": 1795262315,
+    "license": "SEE LICENSE IN LICENSE",
+    "previousVersions": [
+      {
+        "version": "0.0.1",
+        "commit": "7ff8146d92415d41b5fee5c2ba5bfc8307af6b30",
+        "publishTimestamp": 1794733753,
+        "dsh": ">=0.2.2-rc.1"
+      }
+    ]
   },
   {
     "repo": "dsh-message-router",
@@ -43,11 +51,19 @@
       "输出"
     ],
     "author": "Independent DSH contributors",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "dsh": ">=0.2.2-rc.1 <0.3.0",
-    "commit": "5e5a5448431102054b5f3f6fbb1ed1852472d6b0",
-    "publishTimestamp": 1794733752,
-    "license": "MIT"
+    "commit": "0a90a60037903eed72a7a14d14efd72a81ff0f91",
+    "publishTimestamp": 1795262315,
+    "license": "MIT",
+    "previousVersions": [
+      {
+        "version": "0.0.1",
+        "commit": "5e5a5448431102054b5f3f6fbb1ed1852472d6b0",
+        "publishTimestamp": 1794733752,
+        "dsh": ">=0.2.2-rc.1 <0.3.0"
+      }
+    ]
   },
   {
     "repo": "dsh-steer-merge",
@@ -69,7 +85,7 @@
     "author": "Independent DSH contributors",
     "version": "0.1.0",
     "dsh": ">=0.2.2-rc.1 <0.3.0",
-    "commit": "4a28028c75ca4eb78c37cb7dc1ed2affa416a596",
+    "commit": "61a43bbf46446fa32f870bae344b333ec31e9d47",
     "publishTimestamp": 1794733755,
     "license": "MIT"
   },
@@ -93,7 +109,7 @@
     "author": "Independent DSH contributors",
     "version": "0.1.0",
     "dsh": ">=0.2.2-rc.1 <0.3.0-0",
-    "commit": "e842e1d6f5adf3cffc54633126e252fe825b5fec",
+    "commit": "86f8b6e54366211c6c8e7fa2140f38eae4382fc9",
     "publishTimestamp": 1794733750,
     "license": "MIT"
   },
@@ -117,7 +133,7 @@
     "author": "Independent DSH contributors",
     "version": "0.1.0",
     "dsh": ">=0.2.2-rc.1 <0.3.0",
-    "commit": "f577cd118fffb1e65d1b41833479512807f218a7",
+    "commit": "46be826607902f44ea0df86f7b82be4de5b3685b",
     "publishTimestamp": 1794733755,
     "license": "MIT"
   },
@@ -142,7 +158,7 @@
     "author": "Independent DSH contributors",
     "version": "0.2.0",
     "dsh": ">=0.2.2-rc.1 <0.3.0",
-    "commit": "7df7bf17627c8f557cfd79ff29c7addc27d4675f",
+    "commit": "5300d9abaa2baf47ac85120c0f7d96da37509c0d",
     "publishTimestamp": 1794733756,
     "license": "MIT"
   },
@@ -164,11 +180,19 @@
       "工具"
     ],
     "author": "jensentsts",
-    "version": "0.5.2",
+    "version": "0.5.3",
     "dsh": ">=0.2.2-rc.1 <0.3.0",
-    "commit": "efb42c5c338e779396539378afa97d22bb2b3725",
-    "publishTimestamp": 1794733754,
-    "license": "MIT"
+    "commit": "bcf27970ca3500a667df8ffaca55f04462fb6e63",
+    "publishTimestamp": 1795262316,
+    "license": "MIT",
+    "previousVersions": [
+      {
+        "version": "0.5.2",
+        "commit": "efb42c5c338e779396539378afa97d22bb2b3725",
+        "publishTimestamp": 1794733754,
+        "dsh": ">=0.2.2-rc.1 <0.3.0"
+      }
+    ]
   },
   {
     "repo": "dsh-conversation-audio",
@@ -190,7 +214,7 @@
     "author": "Independent DSH contributors",
     "version": "0.0.1",
     "dsh": ">=0.2.2-rc.1 <0.3.0",
-    "commit": "ad23681754bce695c7d8f663a46bea8cd471929c",
+    "commit": "e6825692f0433335de0a4632c9cad57f4206428c",
     "publishTimestamp": 1794733751,
     "license": "MIT"
   },
@@ -212,10 +236,18 @@
       "底座"
     ],
     "author": "DeepSeek / independent contributors",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "dsh": "0.2.2-rc.1",
-    "commit": "1aa8d8c876133b8444d0e3bf68194a197cedcc96",
-    "publishTimestamp": 1794733752,
-    "license": "MIT"
+    "commit": "f6035dbc483941e25ef8a6d4b4591395d712204e",
+    "publishTimestamp": 1795262316,
+    "license": "MIT",
+    "previousVersions": [
+      {
+        "version": "0.0.1",
+        "commit": "1aa8d8c876133b8444d0e3bf68194a197cedcc96",
+        "publishTimestamp": 1794733752,
+        "dsh": "0.2.2-rc.1"
+      }
+    ]
   }
 ]
